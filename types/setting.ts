@@ -68,7 +68,7 @@ export const ColorsSchema = z.object({
 
 export type IColors = z.infer<typeof ColorsSchema>;
 
-export const SettingsSchema = z.object({
+export const SettingSchema = z.object({
   name: z.string(),
   metatitle: z.string(),
   description: z.string(),
@@ -103,4 +103,5 @@ export const SettingsSchema = z.object({
   colors: ColorsSchema,
 });
 
-export type ISettings = z.infer<typeof SettingsSchema>;
+export type ISettings
+ = z.infer<typeof SettingSchema>;
