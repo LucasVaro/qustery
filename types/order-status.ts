@@ -1,9 +1,11 @@
-import { z } from 'zod';
+import { z } from "zod";
 
 const SizesSchema = z.object({
   width: z.number(),
   height: z.number(),
 });
+
+export type ISize = z.infer<typeof SizesSchema>;
 
 export const OrderStatusSchema = z.object({
   name: z.string(),
