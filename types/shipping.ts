@@ -11,6 +11,7 @@ export const ShippingMinSchema = z.object({
 export type IShippingMin = z.infer<typeof ShippingMinSchema>;
 
 export const ShippingSchema = z.object({
+  _id: z.string().optional(),
   name: z.string(),
   description: z.string(),
   image: z.string(),
