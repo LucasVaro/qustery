@@ -7,6 +7,7 @@ import {
 } from "..";
 
 export const SubscriptionPaymentSchema = z.object({
+  _id: z.string().optional(),
   user: UserMinSchema,
   subscriptionId: z.string(),
   subscriptionName: z.string(),

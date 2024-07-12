@@ -8,6 +8,7 @@ import {
 } from "..";
 
 export const OrdersSchema = z.object({
+  _id: z.string().optional(),
   user: UserMinSchema,
   products: z.array(ProductMinSchema),
   price: PriceMinSchema,
