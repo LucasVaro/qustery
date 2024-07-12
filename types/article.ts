@@ -13,6 +13,7 @@ export const ArticleCommentsSchema = z.object({
 export type IArticleComments = z.infer<typeof ArticleCommentsSchema>;
 
 export const ArticleSchema = z.object({
+  _id: z.string().optional(),
   title: z.string(),
   slug: z.string(),
   image: z.string(),
