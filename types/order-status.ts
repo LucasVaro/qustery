@@ -8,6 +8,7 @@ const SizesSchema = z.object({
 export type ISize = z.infer<typeof SizesSchema>;
 
 export const OrderStatusSchema = z.object({
+  _id: z.string().optional(),
   name: z.string(),
   isDefault: z.boolean(),
   isDefaultPaid: z.boolean(),

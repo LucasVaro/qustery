@@ -5,6 +5,7 @@ import {
   ProductMinSchema,
   PriceMinSchema,
   ShippingMinSchema,
+  AffiliationSchema,
 } from "..";
 
 export const OrdersSchema = z.object({
@@ -32,7 +33,7 @@ export const OrdersSchema = z.object({
   createdAt: z.date(),
   orderType: z.string(),
   coupon: z.string(),
-  affiliation: z.object({ _id: z.string() }), // Exemple, assurez-vous d'importer correctement l'interface IAffiliation
+  affiliation: AffiliationSchema,
   source: z.string(),
   productsDeducted: z.boolean(),
 });

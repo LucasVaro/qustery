@@ -61,6 +61,7 @@ export type IProductMin = z.infer<typeof ProductMinSchema>;
 
 export const ProductSchema = z.object({
   _id: z.string().optional(),
+  id: z.string().optional(),
   productId: z.string(),
   sku: z.string(),
   slug: z.string(),
