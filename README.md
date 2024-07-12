@@ -1,0 +1,1 @@
+# qustery-types
