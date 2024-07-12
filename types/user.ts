@@ -17,7 +17,7 @@ export const UserMinSchema = z.object({
   emailIsChecked: z.boolean().nullable(),
 });
 
-export type IUserMinimal = z.infer<typeof UserMinSchema>;
+export type IUserMin = z.infer<typeof UserMinSchema>;
 
 export const UserSchema = z.object({
   _id: z.string().optional(),
