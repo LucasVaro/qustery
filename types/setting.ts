@@ -103,5 +103,5 @@ export const SettingSchema = z.object({
   colors: ColorsSchema,
 });
 
-export type ISettings
+export type ISetting
  = z.infer<typeof SettingSchema>;
