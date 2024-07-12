@@ -7,6 +7,18 @@ const OrderUserSchema = z.object({
   totalPrice: z.number(),
 });
 
+export const UserMinSchema = z.object({
+  _id: z.string().optional(),
+  id: z.string().optional(),
+  firstName: z.string().nullable(),
+  lastName: z.string().nullable(),
+  email: z.string().nullable(),
+  stripeId: z.string().nullable(),
+  emailIsChecked: z.boolean().nullable(),
+});
+
+export type IUserMinimal = z.infer<typeof UserMinSchema>;
+
 export const UserSchema = z.object({
   _id: z.string().optional(),
   id: z.string().optional(),
