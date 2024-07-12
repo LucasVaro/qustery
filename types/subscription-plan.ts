@@ -2,6 +2,7 @@ import { z } from "zod";
 import { PriceSchema } from "..";
 
 export const SubscriptionPlanSchema = z.object({
+  _id: z.string().optional(),
   subscriptionPlanId: z.string(),
   sku: z.string(),
   name: z.string(),
