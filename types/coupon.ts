@@ -17,4 +17,4 @@ export const CouponSchema = z.object({
   }),
 });
 
-export type ICoupons = z.infer<typeof CouponSchema>;
+export type ICoupon = z.infer<typeof CouponSchema>;
