@@ -4,7 +4,7 @@ import {
   PriceMinSchema,
   UserMinSchema,
   AffiliationSchema,
-} from "..";
+} from ".";
 
 export const SubscriptionPaymentSchema = z.object({
   _id: z.string().optional(),

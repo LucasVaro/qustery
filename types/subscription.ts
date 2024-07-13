@@ -5,7 +5,7 @@ import {
   AddressSchema,
   UserMinSchema,
   AffiliationSchema,
-} from "..";
+} from ".";
 
 export const SubscriptionSchema = z.object({
   user: UserMinSchema,

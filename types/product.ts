@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { PriceSchema, ReviewSchema } from "..";
+import { PriceSchema, ReviewSchema } from ".";
 
 export const VariablesSchema = z.object({
   name: z.string(),

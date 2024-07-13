@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserSchema } from "..";
+import { UserSchema } from ".";
 
 export const ArticleCommentsSchema = z.object({
   id: z.string(),

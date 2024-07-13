@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { PriceSchema, PriceMinSchema } from "..";
+import { PriceSchema, PriceMinSchema } from ".";
 
 export const SubscriptionSessionSchema = z.object({
   subscriptionId: z.string(),

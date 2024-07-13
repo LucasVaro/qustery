@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { AddressSchema } from "..";
+import { AddressSchema } from ".";
 
 export const SmtpSchema = z.object({
   host: z.string(),

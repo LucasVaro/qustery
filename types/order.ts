@@ -6,7 +6,7 @@ import {
   PriceMinSchema,
   ShippingMinSchema,
   AffiliationSchema,
-} from "..";
+} from ".";
 
 export const OrdersSchema = z.object({
   _id: z.string().optional(),

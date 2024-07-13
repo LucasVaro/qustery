@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { UserMinSchema, ProductMinSchema, PriceMinSchema } from "..";
+import { UserMinSchema, ProductMinSchema, PriceMinSchema } from ".";
 
 export const CartSchema = z.object({
   _id: z.string().optional(),
