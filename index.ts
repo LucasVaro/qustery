@@ -23,3 +23,5 @@ export * from "./types/subscription";
 export * from "./types/upsell";
 export * from "./types/user-tag";
 export * from "./types/user";
+
+export * from "./interfaces/request";
