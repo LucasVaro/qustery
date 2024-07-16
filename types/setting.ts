@@ -50,7 +50,7 @@ export const AnnouncementSchema = z.object({
     background: z.string(),
     text: z.string(),
   }),
-  alignment: AlignmentEnum,
+  alignement: AlignmentEnum,
 });
 
 export type IAnnouncement = z.infer<typeof AnnouncementSchema>;
