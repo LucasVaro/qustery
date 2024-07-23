@@ -86,7 +86,7 @@ export const ProductSchema = z.object({
   isActive: z.boolean(),
   recommendedProducts: RecommendedProductsSchema,
   launchDate: z.date().nullable(),
-  createdAt: z.date().nullable(),
+  createdAt: z.date(),
 });
 
 export type IProduct = z.infer<typeof ProductSchema>;
