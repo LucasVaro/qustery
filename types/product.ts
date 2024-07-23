@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { PriceSchema, ReviewSchema } from ".";
+import { create } from "domain";
 
 export const VariablesSchema = z.object({
   name: z.string(),
@@ -85,6 +86,7 @@ export const ProductSchema = z.object({
   isActive: z.boolean(),
   recommendedProducts: RecommendedProductsSchema,
   launchDate: z.date().nullable(),
+  create: z.date().nullable(),
 });
 
 export type IProduct = z.infer<typeof ProductSchema>;
