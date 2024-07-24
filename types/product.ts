@@ -48,6 +48,7 @@ export const RecommendedProductsSchema = z.object({
 });
 
 export const ProductMinSchema = z.object({
+  _id: z.string(),
   id: z.string(),
   productId: z.string(),
   name: z.string(),
@@ -56,6 +57,7 @@ export const ProductMinSchema = z.object({
   price: PriceSchema,
   quantity: z.number(),
   variant: z.string().optional(),
+  customFields: z.array(z.object({ name: z.string(), value: z.string() })),
 });
 
 export type IProductMin = z.infer<typeof ProductMinSchema>;
