@@ -86,7 +86,7 @@ export const ProductSchema = z.object({
   stock: z.number(),
   sell: z.number(),
   isActive: z.boolean(),
-  recommendedProducts: RecommendedProductsSchema,
+  recommendedProducts: z.array(RecommendedProductsSchema),
   launchDate: z.date().nullable(),
   createdAt: z.date(),
 });
