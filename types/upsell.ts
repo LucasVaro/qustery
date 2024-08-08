@@ -1,9 +1,11 @@
 import { z } from "zod";
+import { ProductMinSchema } from "./product";
 
 export const UpsellSchema = z.object({
   priority: z.number(),
-  trigger: z.array(z.string()),
-  recommended: z.array(z.string()),
+  triggerId: z.array(z.string()),
+  trigger: z.array(ProductMinSchema),
+  recommended: z.array(ProductMinSchema),
 });
 
 export type IUpsell = z.infer<typeof UpsellSchema>;
