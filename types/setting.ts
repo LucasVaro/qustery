@@ -101,6 +101,7 @@ export const SettingSchema = z.object({
   maintenance: MaintenanceSchema,
   announcement: AnnouncementSchema,
   colors: ColorsSchema,
+  paymentSystem: z.string(),
 });
 
 export type ISetting
