@@ -15,6 +15,7 @@ export const UserMinSchema = z.object({
   email: z.string().nullable(),
   stripeId: z.string().nullable(),
   emailIsChecked: z.boolean().nullable(),
+  isGuest: z.boolean().nullable(),
 });
 
 export type IUserMin = z.infer<typeof UserMinSchema>;
