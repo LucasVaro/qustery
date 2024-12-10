@@ -28,6 +28,7 @@ export const AnalyticsSchema = z.object({
   device: DeviceSchema,
   affiliation: z.string(),
   source: z.string(),
+  referrer: z.string(),
 });
 
 export type IAnalytics = z.infer<typeof AnalyticsSchema>;
