@@ -4,6 +4,7 @@ export * from "./analytics";
 export * from "./article-tag";
 export * from "./article";
 export * from "./cart";
+export * from "./cart-analytics";
 export * from "./coupon";
 export * from "./emailing-contact";
 export * from "./emailing-group";
