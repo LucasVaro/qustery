@@ -1,8 +1,8 @@
 import { z } from "zod";
 
-export const AnalyticsSchema = z.object({
+export const AnalyticsTimeSchema = z.object({
   sessionId: z.string(),
   time: z.number(),
 });
 
-export type IAnalytics = z.infer<typeof AnalyticsSchema>;
+export type IAnalyticsTime = z.infer<typeof AnalyticsTimeSchema>;
