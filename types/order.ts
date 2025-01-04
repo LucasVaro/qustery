@@ -36,6 +36,8 @@ export const OrdersSchema = z.object({
   affiliation: AffiliationSchema,
   source: z.string(),
   productsDeducted: z.boolean(),
+  // PROVISOIRE
+  parcelShop: z.any(),
 });
 
 export type IOrder = z.infer<typeof OrdersSchema>;
