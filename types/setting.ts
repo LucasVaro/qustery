@@ -24,6 +24,7 @@ export const IntegrationsSchema = z.object({
   googleTagManager: z.string(),
   hotjar: z.string(),
   facebookPixel: z.string(),
+  facebookVerification: z.string(),
   twitterPixel: z.string(),
   linkedinPixel: z.string(),
   snapchatPixel: z.string(),
@@ -104,5 +105,4 @@ export const SettingSchema = z.object({
   paymentSystem: z.string(),
 });
 
-export type ISetting
- = z.infer<typeof SettingSchema>;
+export type ISetting = z.infer<typeof SettingSchema>;
