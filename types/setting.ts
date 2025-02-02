@@ -31,6 +31,8 @@ export const IntegrationsSchema = z.object({
   tiktokPixel: z.string(),
   pinterestPixel: z.string(),
   googleAdsPixel: z.string(),
+  googleSearchConsole: z.string(),
+  trustpilot: z.string(),
 });
 
 export type IIntegrations = z.infer<typeof IntegrationsSchema>;

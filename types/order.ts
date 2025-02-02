@@ -6,6 +6,9 @@ import {
   PriceMinSchema,
   ShippingMinSchema,
   AffiliationSchema,
+  AnalyticsLocationSchema,
+  DeviceSchema,
+  Utm,
 } from ".";
 
 export const OrdersSchema = z.object({
@@ -33,9 +36,16 @@ export const OrdersSchema = z.object({
   createdAt: z.date(),
   orderType: z.string(),
   coupon: z.string(),
+  productsDeducted: z.boolean(),
+  ip: z.string(),
+  location: AnalyticsLocationSchema,
+  userId: z.string(),
+  sessionId: z.string(),
+  device: DeviceSchema,
   affiliation: AffiliationSchema,
   source: z.string(),
-  productsDeducted: z.boolean(),
+  referer: z.string(),
+  utm: Utm,
   // PROVISOIRE
   parcelShop: z.any(),
 });

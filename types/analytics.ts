@@ -1,5 +1,15 @@
 import { z } from "zod";
 
+export const Utm = z.object({
+  utm_source: z.string(),
+  utm_medium: z.string(),
+  utm_campaign: z.string(),
+  utm_term: z.string(),
+  utm_content: z.string(),
+});
+
+export type IUtm = z.infer<typeof Utm>;
+
 export const AnalyticsLocationSchema = z.object({
   country: z.string(),
   countryCode: z.string(),
@@ -20,15 +30,16 @@ export const DeviceSchema = z.object({
 export type IDevice = z.infer<typeof DeviceSchema>;
 
 export const AnalyticsSchema = z.object({
+  page: z.string(),
   ip: z.string(),
   location: AnalyticsLocationSchema,
-  page: z.string(),
   userId: z.string(),
   sessionId: z.string(),
   device: DeviceSchema,
   affiliation: z.string(),
   source: z.string(),
   referer: z.string(),
+  utm: Utm,
 });
 
 export type IAnalytics = z.infer<typeof AnalyticsSchema>;
