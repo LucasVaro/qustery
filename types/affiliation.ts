@@ -32,6 +32,7 @@ export const AffiliationSchema = z.object({
   balance: z.number(),
   orders: z.array(AffiliationPaymentSchema),
   subscriptionPayments: z.array(AffiliationPaymentSchema),
+  couponLink: z.string(),
 });
 
 export type IAffiliation = z.infer<typeof AffiliationSchema>;
