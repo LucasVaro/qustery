@@ -1,4 +1,4 @@
-import { z } from "zod";
+import { record, z } from "zod";
 
 export const Utm = z.object({
   utm_source: z.string(),
@@ -43,3 +43,19 @@ export const AnalyticsSchema = z.object({
 });
 
 export type IAnalytics = z.infer<typeof AnalyticsSchema>;
+
+export const RecordSchema = z.object({
+  page: z.string(),
+  ip: z.string(),
+  location: AnalyticsLocationSchema,
+  userId: z.string(),
+  sessionId: z.string(),
+  device: DeviceSchema,
+  affiliation: z.string(),
+  source: z.string(),
+  referer: z.string(),
+  utm: Utm,
+  record: z.any(),
+});
+
+export type IRecord = z.infer<typeof RecordSchema>;
