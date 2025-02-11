@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 export const CouponSchema = z.object({
+  _id: z.string(),
   name: z.string(),
   reduction: z.number(),
   ordersActive: z.boolean(),
