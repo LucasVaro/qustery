@@ -56,7 +56,7 @@ export const RecordSchema = z.object({
   source: z.string(),
   referer: z.string(),
   utm: Utm,
-  record: z.any(),
+  events: z.any(),
   createdAt: z.date(),
   updatedAt: z.date(),
 });
