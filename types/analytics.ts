@@ -45,6 +45,7 @@ export const AnalyticsSchema = z.object({
 export type IAnalytics = z.infer<typeof AnalyticsSchema>;
 
 export const RecordSchema = z.object({
+  _id: z.string().optional(),
   page: z.string(),
   ip: z.string(),
   location: AnalyticsLocationSchema,
