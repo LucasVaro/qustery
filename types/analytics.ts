@@ -57,6 +57,8 @@ export const RecordSchema = z.object({
   referer: z.string(),
   utm: Utm,
   record: z.any(),
+  createdAt: z.date(),
+  updatedAt: z.date(),
 });
 
 export type IRecord = z.infer<typeof RecordSchema>;
