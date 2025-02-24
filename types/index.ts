@@ -4,6 +4,7 @@ export * from "./analytics";
 export * from "./analytics-time";
 export * from "./article-tag";
 export * from "./article";
+export * from "./bundle";
 export * from "./cart";
 export * from "./analytics-cart";
 export * from "./coupon";

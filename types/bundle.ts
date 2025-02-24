@@ -1,7 +1,7 @@
 import { z } from "zod";
-import { PriceSchema, ReviewSchema } from ".";
+import { PriceSchema } from ".";
 
-export const ProductMinSchema = z.object({
+export const BundleSchema = z.object({
   _id: z.string(),
   id: z.string(),
   name: z.string(),
@@ -14,4 +14,4 @@ export const ProductMinSchema = z.object({
   launchDate: z.date(),
 });
 
-export type IProductMin = z.infer<typeof ProductMinSchema>;
+export type IBundle = z.infer<typeof BundleSchema>;
