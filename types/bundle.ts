@@ -9,6 +9,7 @@ export const BundleSchema = z.object({
   price: PriceSchema,
   products: z.array(z.string()),
   ruban: z.string(),
+  sell: z.number(),
   images: z.array(z.string()),
   isActive: z.boolean(),
   launchDate: z.date(),
